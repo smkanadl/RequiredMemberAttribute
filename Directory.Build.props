@@ -1,0 +1,8 @@
+<Project>
+
+  <PropertyGroup>
+    <VersionPrefix>1.0.0</VersionPrefix>
+    <Copyright>Copyright © $(Company) 2023-$([System.DateTime]::Now.Year)</Copyright>
+  </PropertyGroup>
+
+</Project>

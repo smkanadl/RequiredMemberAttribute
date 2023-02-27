@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>netstandard1.0;netstandard2.0;net5.0;net7.0;net20;net48</TargetFrameworks>
+    <Description>A source-package to enable the C# 11 'required' keyword on older target frameworks.</Description>
+    <Authors>Kai Nadler</Authors>
+    <NuspecFile>RequiredMemberAttribute.nuspec</NuspecFile>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+  </PropertyGroup>
+
+  <!-- https://github.com/dasMulli/nuget-include-p2p-example/blob/master/LibA/LibA.csproj -->
+  <Target Name="SetNuspecProperties" BeforeTargets="GenerateNuspec">
+    <PropertyGroup>
+      <NuspecProperties>$(NuspecProperties);id=$(AssemblyName)</NuspecProperties>
+      <NuspecProperties>$(NuspecProperties);version=$(PackageVersion)</NuspecProperties>
+      <NuspecProperties>$(NuspecProperties);description=$(Description)</NuspecProperties>
+      <NuspecProperties>$(NuspecProperties);authors=$(Authors)</NuspecProperties>
+    </PropertyGroup>
+  </Target>
+
+  <!-- https://www.nyckel.com/blog/local-development-and-testing-of-nuget-packages/ -->
+  <Target Name="DeleteLocalCache" BeforeTargets="Pack">
+    <RemoveDir Directories="$(NugetPackageRoot)/$(PackageId.ToLower())/$(PackageVersion)"/>
+  </Target>
+
+</Project>

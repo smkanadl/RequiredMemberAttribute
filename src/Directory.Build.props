@@ -1,0 +1,24 @@
+<Project>
+
+  <Import Project="../Directory.Build.props" />
+
+  <PropertyGroup>
+    <LangVersion>11.0</LangVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <!--https://developercommunity.visualstudio.com/content/problem/30940/cant-remove-netstandard-folder-from-output-path.html-->
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <!--.Net projects-->
+    <BaseSolutionPath>$(MSBuildThisFileDirectory)</BaseSolutionPath>
+    <BaseIntermediateOutputPath>$(BaseSolutionPath)../build/$(MSBuildProjectName)/obj/</BaseIntermediateOutputPath>
+    <IntermediateOutputPath>$(BaseIntermediateOutputPath)$(Platform)/$(Configuration)/$(TargetFramework)/</IntermediateOutputPath>
+    <OutputPath>$(BaseSolutionPath)../build/$(MSBuildProjectName)/bin/$(Platform)/$(Configuration)/$(TargetFramework)/</OutputPath>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <NoWarn>$(NoWarn);NETSDK1138</NoWarn>
+  </PropertyGroup>
+
+</Project>

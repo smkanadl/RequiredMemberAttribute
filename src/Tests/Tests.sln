@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32414.248
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{180EE7D8-4825-4D88-99FB-62051EF2477D}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		..\Directory.Build.props = ..\Directory.Build.props
+		nuget.config = nuget.config
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequiredMemberAttributeTest", "RequiredMemberAttributeTest\RequiredMemberAttributeTest.csproj", "{B36F3304-CDEE-4DFC-93FC-E857A2C5294D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B36F3304-CDEE-4DFC-93FC-E857A2C5294D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B36F3304-CDEE-4DFC-93FC-E857A2C5294D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B36F3304-CDEE-4DFC-93FC-E857A2C5294D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B36F3304-CDEE-4DFC-93FC-E857A2C5294D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6A2AC113-E972-46D2-93C2-E2857FABB6D1}
+	EndGlobalSection
+EndGlobal

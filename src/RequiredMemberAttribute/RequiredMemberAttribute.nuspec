@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$authors$</authors>
+    <developmentDependency>true</developmentDependency>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <projectUrl>https://github.com/smkanadl/RequiredMemberAttribute</projectUrl>
+    <releaseNotes>https://github.com/smkanadl/RequiredMemberAttribute/blob/master/CHANGELOG.md</releaseNotes>
+    <description>$description$</description>
+    <tags>source compiletime polyfill RequiredMemberAttribute required</tags>
+    <repository type="git" url="https://github.com/smkanadl/RequiredMemberAttribute" />
+    <contentFiles>
+      <files include="**/*.cs" />
+    </contentFiles>
+  </metadata>
+  <files>
+    <file src="RequiredMemberAttribute.cs" target="contentFiles/cs/netstandard1.0/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="contentFiles/cs/netstandard2.0/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="contentFiles/cs/net20/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="contentFiles/cs/net48/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="contentFiles/cs/net5.0/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="content/netstandard1.0/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="content/netstandard2.0/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="content/net20/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="content/net48/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.cs" target="content/net5.0/RequiredMemberAttribute" />
+    <file src="RequiredMemberAttribute.props" target="build/RequiredMemberAttribute.props" />
+  </files>
+</package>
